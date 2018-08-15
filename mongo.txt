@@ -1,0 +1,12 @@
+en C:\Program Files\MongoDB\Server\3.6\bin
+>mongod activa el servicio 
+en otra terminal, misma carpeta
+>mongo 
+---
+>use nuevaDB //nuevaDB siendo la base de datos
+>show dbs //muestras las bases de datos
+>show collections // debería mostrar 'users', 
+si es que estamos en nuevaDB, users es una collecion de la base de datos nuevaDB
+>db.users.insert({}) // inserta un objeto a la coleccion users
+>db.users.find() //muestra la coleccion users
+>node index.js //cd en carpeta de proyecto para ejecutar el llamado a la base de datos
